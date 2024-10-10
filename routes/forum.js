@@ -5,7 +5,7 @@ const Message = require('../models/Message.js');
 
 /* GET forum. */
 router.get('/', function (req, res, next) {
-    console.log("FORUM INDEX FILIPE");
+    console.log("je creé des problemes"); 
     res.render('forum/index.hbs', { messagesTable: Message.list() });
 });
 
