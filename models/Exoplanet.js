@@ -6,7 +6,7 @@ module.exports.list = () => {
 };
 
 module.exports.save = (data) => {
-    console.log("SAVE :" + JSON.stringify(data));
+    
     //no id => add exoplanet
     if (data.id === undefined) {
         const stmt = db.prepare('INSERT INTO EXOPLANETS(unique_name, hclass, discovery_year, image) VALUES (?, ?, ?, ?)');
