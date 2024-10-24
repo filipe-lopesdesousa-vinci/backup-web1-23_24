@@ -43,6 +43,7 @@ router.post('/add', upload.single('imageExoplanet'), function (req, res, next) {
 /* GET search exoplanet. */
 router.get('/search', function (req, res, next) {
     console.log("GET SEARCH EXOPLANET");
+    console.log("Hello");
     const uniqueNameExoplanetParam = req.query.uniqueNameExoplanet;
     let min3charOK = false;
     let exoplanetsTable = null;
